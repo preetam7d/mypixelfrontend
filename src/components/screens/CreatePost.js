@@ -13,7 +13,7 @@ const CreatePost = () =>{
     useEffect(()=>{
         //http://localhost:5000
         if(url){
-        axios.post('http://localhost:5000/createpost', {
+        axios.post('https://mypixelbackend.onrender.com/createpost', {
         title:title,
         body:body,
         pic:url,
@@ -36,7 +36,7 @@ const CreatePost = () =>{
 
         });
 
-        // fetch("http://localhost:5000/createpost",{
+        // fetch("https://mypixelbackend.onrender.com/createpost",{
         //     method:"POST",
         //     headers:{"Content-Type":"application/json"},
         //     body:JSON.stringify({

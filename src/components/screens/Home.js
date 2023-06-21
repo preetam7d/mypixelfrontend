@@ -5,7 +5,7 @@ const Home=()=> {
     const [data,setData] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:5000/allposts',{
+        axios.get('https://mypixelbackend.onrender.com/allposts',{
             headers:{
                     "Authorization":"Bearer "+localStorage.getItem("jwt")
             },

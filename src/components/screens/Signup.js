@@ -16,7 +16,7 @@ const Signup=()=> {
             return  M.toast({html: "Invalid Email" })
         }
 
-        axios.post('http://localhost:5000/signup', {
+        axios.post('https://mypixelbackend.onrender.com/signup', {
         name: name,
         email: email,
         password: password,
@@ -34,7 +34,7 @@ const Signup=()=> {
         });
 
 
-    //     fetch("http://localhost:5000/signup",{
+    //     fetch("https://mypixelbackend.onrender.com/signup",{
     //         method:"POST",
     //         headers:{"Content-Type":"application/json"},
     //         body:JSON.stringify({

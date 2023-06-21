@@ -7,7 +7,7 @@ const Profile=()=> {
     const [mypics,setMypics] = useState([])
     const {state,dispatch} = useContext(UserContext)
     useEffect(()=>{
-        axios.get('http://localhost:5000/myposts',{
+        axios.get('https://mypixelbackend.onrender.com/myposts',{
             headers:{
                     "Authorization":"Bearer "+localStorage.getItem("jwt")
             },
@@ -26,7 +26,7 @@ const Profile=()=> {
     },[]) 
 
     const deletePost = (postId) => {
-        axios.delete(`http://localhost:5000/deletepost/${postId}`, {
+        axios.delete(`https://mypixelbackend.onrender.com/deletepost/${postId}`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
